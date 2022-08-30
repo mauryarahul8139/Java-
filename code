@@ -1,0 +1,100 @@
+import java.util.Scanner;
+
+public class Menu {
+    public static void main(String args[])
+    {
+        Scanner scn  = new Scanner(System.in);
+        
+        System.out.println("Do You Want To Place Order Yes Or No Enter ");
+        String ch = scn.next();
+        if(ch.equals("yes"))
+        {
+            System.out.println("Welcome To Coforge Canteen");
+
+
+            System.out.println("======================================================================");
+            Snacks();
+            listItem();
+
+
+            System.out.println("Please Enter The Choice");
+            int choice = scn.nextInt();
+
+           if(choice==1)
+           {
+               int sr[] = {1,2,3,4};
+               String menu[] = {"poha" ,"idli", "Wada pav" , "Chole Bhature"};
+               String quantity[] = {"1 plate" ,"1 plate","1 plate","1 plate"};
+               int price[] = {60,40,90,120};
+
+               System.out.println("SR.No" + "\t\t" + "MENU" + "\t\t" + "QUANTITY" + "\t\t" + "PRICE");
+               System.out.println("======================================================================");
+
+               for(int i =0;i<4;i++)
+               {
+                   System.out.println(sr[i] + "\t\t" + menu[i] + "\t\t" + quantity[i] + "\t\t" + price[i]);
+               }
+           }
+           else if(choice==2)
+           {
+            int sr[] = {1,2,3,4};
+               String menu[] = {"poha" ,"idli", "Wada pav" , "Chole Bhature"};
+               String quantity[] = {"1 plate" ,"1 plate","1 plate","1 plate"};
+               int price[] = {60,40,90,120};
+
+               System.out.println("SR.No" + "\t\t" + "MENU" + "\t\t" + "QUANTITY" + "\t\t" + "PRICE");
+               System.out.println("======================================================================");
+
+               for(int i =0;i<4;i++)
+               {
+                   System.out.println(sr[i] + "\t\t" + menu[i] + "\t\t" + quantity[i] + "\t\t" + price[i]);
+               }
+
+           }
+           else if(choice==3)
+           {
+            int sr[] = {1,2,3,4};
+            String menu[] = {"poha" ,"idli", "Wada pav" , "Chole Bhature"};
+            String quantity[] = {"1 plate" ,"1 plate","1 plate","1 plate"};
+            int price[] = {60,40,90,120};
+
+            System.out.println("SR.No" + "\t\t" + "MENU" + "\t\t" + "QUANTITY" + "\t\t" + "PRICE");
+            System.out.println("======================================================================");
+
+            for(int i =0;i<4;i++)
+            {
+                System.out.println(sr[i] + "\t\t" + menu[i] + "\t\t" + quantity[i] + "\t\t" + price[i]);
+            }
+           }
+           else
+           {
+            int sr[] = {1,2,3,4};
+            String menu[] = {"poha" ,"idli", "Wada pav" , "Chole Bhature"};
+            String quantity[] = {"1 plate" ,"1 plate","1 plate","1 plate"};
+            int price[] = {60,40,90,120};
+
+            System.out.println("SR.No" + "\t\t" + "MENU" + "\t\t" + "QUANTITY" + "\t\t" + "PRICE");
+            System.out.println("======================================================================");
+
+            for(int i =0;i<4;i++)
+            {
+                System.out.println(sr[i] + "\t\t" + menu[i] + "\t\t" + quantity[i] + "\t\t" + price[i]);
+            }
+           }
+
+
+        }
+    }
+
+    public static void Snacks()
+    {
+        System.out.println("The Snacks Menu Are");
+    }
+    public static void listItem()
+    {
+        System.out.println("1.Snacks");
+        System.out.println("2.Lunch");
+        System.out.println("3.Dinner");
+        System.out.println("4.Soft Drinks");
+    }
+}
